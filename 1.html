@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>моя вселенная</title>
+
+  
+
+  <marquee class="text" direction="left" scrollamount="15" scrolldelay="0">
+    ❤️  ❤️ I love you ❤️ ❤️             <!-- английский -->
+    ❤️  ❤️ я люблю тебя ❤️ ❤️           <!-- русский -->
+    ❤️  ❤️ Я цябе кахаю ❤️ ❤️           <!-- белорусский -->
+    ❤️  ❤️ Je t'aime ❤️ ❤️              <!-- французкий -->
+    ❤️  ❤️ 私はあなたを愛しています ❤️ ❤️ <!-- японский -->
+    ❤️  ❤️ Miluji tě ❤️ ❤️              <!-- чешский -->
+    ❤️  ❤️ Aš tave myliu ❤️ ❤️          <!-- литовский -->
+    ❤️  ❤️ мин эйиигин таптыыбын ❤️ ❤️  <!-- якутский -->
+    ❤️  ❤️ 내가 당신을 사랑 ❤️ ❤️        <!-- корейский -->
+    ❤️  ❤️ Ti amo ❤️ ❤️                 <!-- итальсянский -->
+    ❤️  ❤️ Мин һине яратам ❤️ ❤️        <!-- башкирский -->
+    ❤️  ❤️ Ich liebe dich ❤️ ❤️         <!-- немецкий -->
+    ❤️  ❤️ Unë të dua ❤️ ❤️             <!-- албанский -->
+    ❤️  ❤️ Мен сені жақсы көремін ❤️ ❤️ <!-- казахский -->
+    ❤️  ❤️ Te iubesc ❤️ ❤️              <!-- румынский -->
+    ❤️  ❤️ Σ΄αγαπώ/ σας αγαπώ ❤️ ❤️     <!-- греческий -->
+    ❤️  ❤️ Íúbim ta ❤️ ❤️                <!-- словацкий -->
+    </marquee>
+    
+
+ <style>
+
+marquee{
+      text-shadow: 8px 8px 9px #cc5858;
+      font-size: 60px;
+      font-weight: 800;
+      color: #d61010;
+      font-family: sans-serif;
+      }
+
+      .text {
+  animation: myanimation 2s linear 0s infinite;
+}
+
+@keyframes myanimation {
+  0% {
+    text-shadow: 4px 4px 6px #d12424;
+  }
+  25% {
+    text-shadow: 4px 4px 6px #adf30a;
+  }
+  50% {
+    text-shadow: -4px -4px 6px #b921f5;
+  }
+  75% {
+    text-shadow: -4px -4px 6px #4b0e63;
+  }
+  100% {
+    text-shadow: 4px 4px 6px #055f6e;
+  }
+}
+
+    body {
+      background-color: rgb(247, 146, 163);
+    }
+    
+    button {
+      background-color: hwb(350 54% 4%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      height: 60px;
+      width: 200px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    button:hover {
+      background-color: hwb(351 47% 11%);
+      position: absolute;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 200px;
+      width: 200px;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 2px solid #333;
+      z-index: 2;
+      padding: 20px;
+      box-shadow: 5px 5px 10px #dd39a6;
+      font-size: 19px;
+      text-align: center;
+    }
+
+    #closeButton {
+      margin-top: 70px;
+    }
+    
+   
+    .photo-container {
+      
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      
+    }
+
+    .photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #333;
+      box-shadow: 5px 5px 10px #dd39a6;
+    
+      
+    }
+
+    body::before {
+  content: "𝓼𝓹𝓵𝓪1𝓽𝓮𝔃𝓙𝔃~𝓢𝔂𝓶1𝓻3𝓴𝔂𝓷";
+  font-size: 75px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-shadow: 10px 10px 10px #a73d87;
+  animation-name: fadein;
+  animation-duration: 2s;
+  
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.footer {
+  background: linear-gradient(to bottom, #dd5ec8, #e496bd, #d8a0b7);
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 220px;
+}
+
+body {
+      overflow-x: hidden;
+    }
+      
+  </style>
+ 
+ <footer id="footer" class="footer">
+  ❤️Я ᴛᥱδя ᥙᥴκᥲ᧘ ᥴρᥱдᥙ ʍᥙ᧘᧘ᥙ᧐нᥲ ᥰ᧐дᥱ᧘᧐κ
+  С᧘᧐ʍᥲнныᥱ ᧘юдᥙ, ʍы ᥙщᥱʍ ʙᴛ᧐ρую чᥲᥴᴛь
+  Еᥴ᧘ᥙ ʍы ᥙ ᧘юδᥙʍ, ᴛ᧐ ϶ᴛ᧐ нᥱ ᴛᥲκ ᥙ чᥲᥴᴛ᧐
+  Ты ᧘᧐ʙᥙ᧘ᥲ ʍᥱня, κ᧐ᴦдᥲ ᥰᥲдᥲ᧘ я ʙ δᥱɜдну
+  Ты дᥱρжᥲ᧘ᥲ ɜᥲ ρуκу ʙ ᥰρ᧐ᴦу᧘κᥲх ᥰ᧐ ᧘ᥱɜʙᥙю❤️
+  <p>
+    ❤️Мᥱжду нᥲʍᥙ ᴦ᧐ρ᧐дᥲ ᥙ ᴛ᧐нκᥙᥔ ᧘ᥱд
+    Я ᥙду κ ᴛᥱδᥱ, я ᥴ᧘᧐ʙн᧐ Д᧐н 𐌺ᥙх᧐ᴛ
+    Б᧐ᥴыʍᥙ н᧐ᴦᥲʍᥙ ᥰ᧐ ρᥲɜδᥙᴛыʍ ᥴᴛᥱκ᧘ᥲʍ❤️
+    </p>
+
+    <p>
+      ❤️Знаешь, ты моя сама главная слабость и самая глупая тайна
+      С тобой умереть мне на радость, оставим записку, так, чтоб случайно❤️
+      </p>
+      
+      <p>
+        ❤️Знᥲᥱɯь, ᴛы ʍ᧐я ᥴᥲʍᥲ ᴦ᧘ᥲʙнᥲя ᥴ᧘ᥲδ᧐ᥴᴛь ᥙ ᥴᥲʍᥲя ᴦ᧘уᥰᥲя ᴛᥲᥔнᥲ С ᴛ᧐δ᧐ᥔ уʍᥱρᥱᴛь ʍнᥱ нᥲ ρᥲд᧐ᥴᴛь, ᧐ᥴᴛᥲʙᥙʍ ɜᥲᥰᥙᥴκу, ᴛᥲκ, чᴛ᧐δ ᥴ᧘учᥲᥔн᧐❤️
+    </p>
+   
+    <p>
+      ❤️Шᴀᴦᴀн϶ ᴛы ʍᴏя, Шᴀᴦᴀн϶!
+Пᴏᴛᴏʍу, чᴛᴏ я ᴄ ᴄᴇʙᴇᴩᴀ, чᴛᴏ ᴧи
+Я ᴦᴏᴛᴏʙ ᴩᴀᴄᴄᴋᴀɜᴀᴛь ᴛᴇбᴇ ᴨᴏᴧᴇ
+Пᴩᴏ ʙᴏᴧниᴄᴛую ᴩᴏжь ᴨᴩи ᴧунᴇ
+Шᴀᴦᴀн϶ ᴛы ʍᴏя, Шᴀᴦᴀн϶❤️
+</p>
+
+<p>
+  ❤️Ты нᥱ ᧘юδᥙɯь ρ᧐ɜы? Оκᥱᥔ
+  Я нᥲρʙу ᴛᥱδᥱ цʙᥱᴛ᧐ʙ ᥴ᧐ ʙᥴᥱх ᥰ᧐᧘ᥱᥔ
+  И уᥴᴛρ᧐ю ᴛᥱδᥱ ᥴᥲʍыᥔ ᧘учɯᥙᥔ дᥱнь
+  𐌿ρ᧐ᥴᴛ᧐ ᥰ᧐᧘юδᥙ ʍᥱня ᥴᥙ᧘ьнᥱᥔ❤️
+</p>
+
+</footer>
+
+</head>
+<body>
+ 
+  <button id="heartButton">❤️</button>
+  <div class="overlay"></div>
+  <div class="popup">
+<p>Женя ты моя любовь, ты мое искусство <button onclick="window.location.href='https://vk.com/o.p1um'">&#10084;</button></p>
+
+    <button id="closeButton">Close</button>
+  </div>
+  
+ 
+  <div class="photo-container">
+    
+    <img class="photo" src="https://i.ibb.co/tw69Hj5/8fca4298-d832-43ba-9ac0-3cf867ea82a4.jpg" alt="8fca4298-d832-43ba-9ac0-3cf867ea82a4">
+   
+  </div>
+
+  <script>
+    const button = document.getElementById('heartButton');
+    const overlay = document.querySelector('.overlay');
+    const popup = document.querySelector('.popup');
+    const closeButton = document.getElementById('closeButton');
+
+    button.addEventListener('click', () => {
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+    });
+
+     closeButton.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  });
+</script>
+</body>
+
+</html>
